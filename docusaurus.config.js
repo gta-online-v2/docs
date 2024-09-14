@@ -4,27 +4,31 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'GTA Online V2 Wiki',
-  tagline: 'Revolutionize your FiveM server with GTA Online V2',
-  favicon: 'img/favicon.ico',
-
+  title: 'GTA:O 2.0',
+  tagline: 'PLay GTA:Online but on FiveM !',
+  favicon: 'img/logo.png',
   // Set the production url of your site here
-  url: 'https://gtaonlinev2wiki.com',  // Replace with your actual domain
+  url: 'https://gta-online-v2.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'gtao-community', // Your GitHub org/user name.
-  projectName: 'gtao-v2', // Your GitHub repo name.
+  organizationName: 'gta-online-v2', // Usually your GitHub org/user name.
+  projectName: 'docs', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -36,12 +40,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/gtao-community/gtao-v2-wiki/tree/main/docs/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        pages: false,
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
-        },
+        }
       }),
     ],
   ],
@@ -49,68 +57,65 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/gtaonlinev2-social-card.jpg',  // Replace with your project’s social image
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'GTA Online V2 Wiki',
+        title: 'GTA:O 2.0',
         logo: {
-          alt: 'GTA Online V2 Logo',
-          src: 'img/gtao2.png',
+          alt: 'GTA:O 2.0 Logo',
+          src: 'img/logo.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Documentation',
-          },
-          {
-            href: 'https://github.com/gta-online-v2',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   type: 'localeDropdown',
+          // },
         ],
       },
-      footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Get Started',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Discord',
-                href: 'https://discord.gg/gtao-v2',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/gtao_v2',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/gta-online-v2',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} GTA Online V2. Built with Docusaurus.`,
-      },
-      prism: {
-        theme: prismThemes.github,
-        darkTheme: prismThemes.dracula,
-      },
+      //   footer: {
+      //     style: 'dark',
+      //     links: [
+      //       {
+      //         title: 'Docs',
+      //         items: [
+      //           {
+      //             label: 'Tutorial',
+      //             to: '/docs/intro',
+      //           },
+      //         ],
+      //       },
+      //       {
+      //         title: 'Community',
+      //         items: [
+      //           {
+      //             label: 'Stack Overflow',
+      //             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+      //           },
+      //           {
+      //             label: 'Discord',
+      //             href: 'https://discordapp.com/invite/docusaurus',
+      //           },
+      //           {
+      //             label: 'Twitter',
+      //             href: 'https://twitter.com/docusaurus',
+      //           },
+      //         ],
+      //       },
+      //       {
+      //         title: 'More',
+      //         items: [
+      //           {
+      //             label: 'GitHub',
+      //             href: 'https://github.com/facebook/docusaurus',
+      //           },
+      //         ],
+      //       },
+      //     ],
+      //     copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      //   },
+      //   prism: {
+      //     theme: prismThemes.github,
+      //     darkTheme: prismThemes.dracula,
+      //   },
     }),
 };
 
