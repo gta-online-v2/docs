@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Code Norms
 
-Welcome to the code norms page for **GTA:O 2.0 for FiveM**. Adhering to these coding standards ensures that our project remains clean, maintainable, and scalable. Below are the guidelines that all contributors are expected to follow.
+Welcome to the code norms page for **Online 2.0 for FiveM**. Adhering to these coding standards ensures that our project remains clean, maintainable, and scalable. Below are the guidelines that all contributors are expected to follow.
 
 ## General Guidelines
 

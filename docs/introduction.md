@@ -3,9 +3,9 @@ sidebar_position: 1
 slug: /
 ---
 
-# GTA:O 2.0 Introduction
+# Online 2.0 Introduction
 
-**GTA:O 2.0 for FiveM** is a recreation of the classic GTA Online experience on the FiveM platform, focusing on delivering a high-quality, smooth, and maintainable gameplay environment. This project aims to bring the core features of GTA Online to FiveM, allowing players to enjoy the open-world action, heists, and multiplayer interactions of the original game.
+**Online 2.0 for FiveM** is a recreation of the classic GTA Online experience on the FiveM platform, focusing on delivering a high-quality, smooth, and maintainable gameplay environment. This project aims to bring the core features of GTA Online to FiveM, allowing players to enjoy the open-world action, heists, and multiplayer interactions of the original game.
 
 It's designed for communities seeking stability, performance, and a familiar online experience in a customizable server setting.
 
